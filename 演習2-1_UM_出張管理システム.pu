@@ -1,14 +1,3 @@
-@startuml 例題3
-left to right direction
-actor 経理担当者 as uzer#DDDDDD;line:black;line.bold;
-actor 交通整理システム as admin#DDDDDD;line:black;line.bold;
-actor 承認者 as uzer1#DDDDDD;line:black;line.bold;
-actor 申請者 as uzer2#DDDDDD;line:black;line.bold;
-rectangle 出張管理システム {
-usecase 出張申請を登録する。
-usecase 出張申請を提出する 
-usecase 出張申請を認証する
-usecase 出張申請を却下する 
 @startuml 演習
 left to right direction
 actor 申請者 as a#DDDDDD;line:black;line.bold;
