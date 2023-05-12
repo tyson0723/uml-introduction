@@ -1,0 +1,11 @@
+@startuml
+left to right direction
+class 車 {
+    - 車種:String
+    - 乗車人数:int
+}
+class タイヤ {
+    - 型番:String
+}
+車 "1" o-- "4" タイヤ
+@enduml

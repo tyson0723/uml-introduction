@@ -1,0 +1,10 @@
+@startuml
+hide footbox
+participant "user:利用者" as user
+participant ":予約画面" as boundary
+user -> boundary :ログインする()
+activate boundary
+    boundary ->> boundary : 認証()
+    activate boundary
+deactivate boundary
+@enduml

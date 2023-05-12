@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+object "<u>高橋洋平さん: 社員</u>" as 高橋洋平{
+
+}
+object "<u>樋口正之さん: 社員</u>" as 樋口正之{
+    
+}
+object "<u>情報処理安全確保支援士:資格</u>" as 情報処理安全確保支援士{
+
+}
+object "<u>LinuC試験Level1:資格</u>" as LinuC試験Level1 {
+
+}
+高橋洋平 -- 情報処理安全確保支援士
+LinuC試験Level1 -up- 高橋洋平
+樋口正之 -- 情報処理安全確保支援士
+@endumle

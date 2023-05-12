@@ -1,10 +1,10 @@
-@startuml 例題1
+@startuml 演習
 left to right direction
-actor 出荷担当者 #DDDDDD;line:black;line.bold;
+actor 出荷担当者 #DDDDDD;line:black;
 rectangle 販売管理システム {
-usecase 確認する
-usecase 登録する   
+usecase 出荷状況を登録する
+usecase 注文商品の確認をする
 }
-出荷担当者 --> 登録する
-出荷担当者 --> 確認する
+出荷担当者 --> 出荷状況を登録する
+出荷担当者 --> 注文商品の確認をする
 @enduml

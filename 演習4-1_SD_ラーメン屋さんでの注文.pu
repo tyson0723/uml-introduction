@@ -1,0 +1,18 @@
+@startuml
+hide footbox
+Actor "<u>:客</u>" as user
+participant "<u>:フロア店員</u>" as salesperson
+participant "<u>:料理人</u>" as cook
+mainframe sd ラーメン屋さん
+activate user
+    user -> salesperson : ラーメンを注文する
+    activate salesperson
+        salesperson -> cook : 調理を指示する
+        activate cook
+            cook -> cook : 調理をする
+            cook -->> salesperson : ラーメン
+        deactivate
+        salesperson -->> user : cook : ラーメン
+    deactivate salesperson
+deactivate user
+@enduml

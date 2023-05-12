@@ -1,0 +1,15 @@
+@startuml
+hide footbox
+participant "controller:コントローラ" as controller
+participant "hotel:ホテル" as hotel
+participant "予約" as reserve
+activate controller
+    controller -> hotel : 予約操作を呼び出す
+    activate hotel
+        create reserve
+        hotel -> reserve: <<create>>
+        hotel -> hotel : 予約登録操作呼び出し
+        activate hotel
+    deactivate hotel
+deactivate controller
+@enduml
