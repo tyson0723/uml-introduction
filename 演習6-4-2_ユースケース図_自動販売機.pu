@@ -1,0 +1,13 @@
+@startuml
+    left to right direction
+    actor 客 as user #DDDDDD;line:black;line.bold;
+    actor ベンダー as bender #DDDDDD;line:black;line.bold;
+    rectangle 自動販売機 {
+        usecase お金を入れる
+        usecase ボタンを押す
+        usecase 料金を回収する
+    }
+    user --> お金を入れる
+    user --> ボタンを押す
+    bender --> 料金を回収する
+@enduml

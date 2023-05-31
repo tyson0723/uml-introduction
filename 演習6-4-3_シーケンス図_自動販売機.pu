@@ -1,0 +1,20 @@
+@startuml
+    hide footbox 
+    actor 客 as user
+    participant ":料金装置" as r
+    participant ":ボタン" as button
+    participant ":ベンダー装置" as b
+    autonumber
+    user -> r : お金を入れる
+    activate r
+    user -> button : ボタンを押す
+    deactivate r
+        activate button
+            opt お金が入っている
+            button -> b : ボタンが押された
+            activate b
+                b -> user : ドリンクを出す
+        deactivate button
+            deactivate b
+            end alt
+@enduml
